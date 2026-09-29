@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#121214">
+<title>Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <div id="calculator">
+    <div id="display-area">
+      <div id="display">0</div>
+      <div id="lyric"></div>
+      <div id="music-status">♫&nbsp; MUSIC PLAYING &nbsp;♫</div>
+    </div>
+
+    <div id="buttons">
+      <button class="clear" data-value="AC">AC</button>
+      <button data-value="⌫">⌫</button>
+      <button data-value="%">%</button>
+      <button class="operator" data-value="÷">÷</button>
+
+      <button data-value="7">7</button>
+      <button data-value="8">8</button>
+      <button data-value="9">9</button>
+      <button class="operator" data-value="×">×</button>
+
+      <button data-value="4">4</button>
+      <button data-value="5">5</button>
+      <button data-value="6">6</button>
+      <button class="operator" data-value="−">−</button>
+
+      <button data-value="1">1</button>
+      <button data-value="2">2</button>
+      <button data-value="3">3</button>
+      <button class="operator" data-value="+">+</button>
+
+      <button class="zero" data-value="0">0</button>
+      <button data-value=".">.</button>
+      <button class="equals" data-value="=">=</button>
+    </div>
+  </div>
+</div>
+
+<audio id="music" src="equals.mp3" preload="auto"></audio>
+<script src="script.js"></script>
+</body>
+</html>
